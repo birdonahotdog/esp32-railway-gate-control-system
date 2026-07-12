@@ -136,3 +136,23 @@ This approach:
 The project prioritizes safety over speed.
 
 Dedicated obstacle detection sensors monitor the area between the gates. If a vehicle or pedestrian is detected, only the affected gate is reopened while the other gate remains closed, allowing safe evacuation without unnecessarily exposing the entire crossing.
+---
+
+## 📁 Repository Structure
+
+```text
+esp32-railway-gate-control-system/
+│
+├── README.md
+├── LICENSE
+├── code/
+│   └── railway_gate_controller.ino
+│
+├── docs/
+│   ├── Project_Report.pdf
+│   └── Presentation.pptx
+│
+└── images/
+    ├── prototype.jpg
+    └── vibration-sensor.jpg
+```
