@@ -173,7 +173,7 @@ esp32-railway-gate-control-system/
 - **Anshu Raj**
 - **Aditya Sharma**
 
-Under the guidance of **Dr. Apu Mistry**
+ Under the guidance of **Dr. Apu Mistry**
 ---
 
 If you found this project interesting, feel free to ⭐ the repository or explore the documentation to learn more about the system architecture and implementation.
