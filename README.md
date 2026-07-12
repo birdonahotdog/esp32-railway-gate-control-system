@@ -156,3 +156,13 @@ esp32-railway-gate-control-system/
     ├── prototype.jpg
     └── vibration-sensor.jpg
 ```
+---
+
+## 🚀 Future Improvements
+
+- Support simultaneous train movement on multiple tracks.
+- Add IoT-based remote monitoring and notifications.
+- Integrate RFID or GPS-based train identification.
+- Replace vibration sensing with industrial-grade train detection.
+- Log system events for diagnostics and maintenance.
+- Develop a weather-resistant outdoor prototype.
