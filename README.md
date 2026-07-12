@@ -105,3 +105,34 @@ If an obstacle is detected:
 - Only the affected gate opens.
 - The buzzer sounds continuously.
 - After a short delay, the gate closes automatically and the normal train sequence resumes.
+---
+
+## 🧠 Engineering Challenges & Design Decisions
+
+During development, several practical challenges were encountered that influenced the final system design.
+
+### Reducing False Triggers
+
+Initial testing showed that relying solely on IR sensors could result in unwanted activations caused by pedestrians, animals, or environmental interference.
+
+To improve reliability, SW-420 vibration sensors were introduced as an authentication layer. An IR sensor is allowed to perform a critical operation only after the corresponding vibration sensor has confirmed genuine train movement.
+
+---
+
+### Dynamic Sensor Allocation
+
+Instead of assigning a fixed function to every IR sensor, selected sensors perform different operations depending on the detected train direction.
+
+This approach:
+
+- Reduces the number of sensors required
+- Minimizes ESP32 GPIO usage
+- Makes the system easier to expand in future versions
+
+---
+
+### Safety First
+
+The project prioritizes safety over speed.
+
+Dedicated obstacle detection sensors monitor the area between the gates. If a vehicle or pedestrian is detected, only the affected gate is reopened while the other gate remains closed, allowing safe evacuation without unnecessarily exposing the entire crossing.
