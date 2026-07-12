@@ -166,3 +166,11 @@ esp32-railway-gate-control-system/
 - Replace vibration sensing with industrial-grade train detection.
 - Log system events for diagnostics and maintenance.
 - Develop a weather-resistant outdoor prototype.
+---
+
+## 👥 Contributors
+
+- **Anshu Raj**
+- **Aditya Sharma**
+
+Under the guidance of **Dr. Apu Mistry**
