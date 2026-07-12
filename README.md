@@ -67,3 +67,41 @@ Unlike many student railway gate projects, this system also demonstrates:
 - Arduino IDE
 - Embedded C/C++
 - ESP32 Arduino Core
+---
+
+## 🔄 System Workflow
+
+### Clockwise Train Movement
+
+1. `Vsetc` detects track vibration and authenticates the approaching train.
+2. `IRsb` performs the **SET** operation after successful authentication.
+3. `IRbs` activates the warning buzzer.
+4. `IRgr` closes both railway gates and turns the buzzer OFF.
+5. `Vrc` authenticates the RESET sequence.
+6. `IRrg` reopens both gates and returns the system to the idle state.
+
+---
+
+### Anti-clockwise Train Movement
+
+1. `Vsetac` authenticates the approaching train.
+2. `IRbs` performs the **SET** operation.
+3. `IRsb` activates the warning buzzer.
+4. `IRrg` closes both gates and turns the buzzer OFF.
+5. `Vrac` authenticates the RESET sequence.
+6. `IRgr` reopens both gates.
+
+---
+
+### Obstacle Detection
+
+While the gates remain closed:
+
+- `IR5` monitors the left gate.
+- `IR6` monitors the right gate.
+
+If an obstacle is detected:
+
+- Only the affected gate opens.
+- The buzzer sounds continuously.
+- After a short delay, the gate closes automatically and the normal train sequence resumes.
