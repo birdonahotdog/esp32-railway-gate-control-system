@@ -1,4 +1,4 @@
-# 🚂 ESP32 Railway Gate Control System
+#  ESP32 Railway Gate Control System
 
 An intelligent railway level crossing automation system built using **ESP32**, **SW-420 vibration sensors**, **IR sensors**, **servo motors**, and **buzzers**. The project automatically detects approaching trains, controls railway gates, provides warning alerts, and incorporates multiple safety mechanisms to improve crossing reliability.
 
@@ -6,7 +6,7 @@ An intelligent railway level crossing automation system built using **ESP32**, *
 
 ---
 
-## 📖 Project Overview
+##  Project Overview
 
 Railway level crossings remain vulnerable to accidents caused by delayed gate operation, poor visibility, and human error. This project demonstrates how an embedded system can automate gate operation using multiple sensors and intelligent software logic.
 
@@ -21,34 +21,34 @@ Unlike many student railway gate projects, this system also demonstrates:
 - Modular design for future expansion to dual-track operation
 ---
 
-## ✨ Key Features
+##  Key Features
 
-- 🚦 **Automatic Railway Gate Control**  
+-  **Automatic Railway Gate Control**  
   Opens and closes the gates automatically based on train movement.
 
-- 📳 **Vibration Sensor Authentication**  
+-  **Vibration Sensor Authentication**  
   SW-420 vibration sensors validate train movement before IR sensors are allowed to trigger critical operations, reducing false activations.
 
-- ↔️ **Bidirectional Train Detection**  
+-  **Bidirectional Train Detection**  
   Supports trains approaching from both clockwise and anticlockwise directions using the same sensor arrangement.
 
-- 🔄 **Dynamic IR Sensor Allocation**  
+-  **Dynamic IR Sensor Allocation**  
   Selected IR sensors perform different functions depending on the detected train direction, reducing hardware requirements and GPIO usage.
 
-- 🚨 **Automatic Warning System**  
+-  **Automatic Warning System**  
   Buzzers alert nearby pedestrians and vehicles before gate closure.
 
-- 🛡️ **Obstacle Detection**  
+-  **Obstacle Detection**  
   IR sensors monitor the area between the gates. If an obstacle is detected, the affected gate reopens to allow safe passage.
 
-- ⚙️ **ESP32-Based Control Logic**  
+-  **ESP32-Based Control Logic**  
   All sensor inputs and actuator outputs are managed by the ESP32 using modular embedded software.
 
-- 🔧 **Modular Architecture**  
+-  **Modular Architecture**  
   The system is designed so additional sensors or future enhancements can be integrated with minimal changes.
 ---
 
-## 🛠️ Hardware Used
+## Hardware Used
 
 | Component | Purpose |
 |-----------|---------|
@@ -62,14 +62,14 @@ Unlike many student railway gate projects, this system also demonstrates:
 
 ---
 
-## 💻 Software Used
+## Software Used
 
 - Arduino IDE
 - Embedded C/C++
 - ESP32 Arduino Core
 ---
 
-## 🔄 System Workflow
+## System Workflow
 
 ### Clockwise Train Movement
 
@@ -107,7 +107,7 @@ If an obstacle is detected:
 - After a short delay, the gate closes automatically and the normal train sequence resumes.
 ---
 
-## 🧠 Engineering Challenges & Design Decisions
+## Engineering Challenges & Design Decisions
 
 During development, several practical challenges were encountered that influenced the final system design.
 
@@ -138,7 +138,7 @@ The project prioritizes safety over speed.
 Dedicated obstacle detection sensors monitor the area between the gates. If a vehicle or pedestrian is detected, only the affected gate is reopened while the other gate remains closed, allowing safe evacuation without unnecessarily exposing the entire crossing.
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```text
 esp32-railway-gate-control-system/
@@ -158,7 +158,7 @@ esp32-railway-gate-control-system/
 ```
 ---
 
-## 🚀 Future Improvements
+## Future Improvements
 
 - Support simultaneous train movement on multiple tracks.
 - Add IoT-based remote monitoring and notifications.
@@ -168,9 +168,12 @@ esp32-railway-gate-control-system/
 - Develop a weather-resistant outdoor prototype.
 ---
 
-## 👥 Contributors
+## Contributors
 
 - **Anshu Raj**
 - **Aditya Sharma**
 
 Under the guidance of **Dr. Apu Mistry**
+---
+
+If you found this project interesting, feel free to ⭐ the repository or explore the documentation to learn more about the system architecture and implementation.
